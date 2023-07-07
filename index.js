@@ -16,6 +16,9 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use(cors());
 
+app.get("/", (req, res) => {
+    res.send("Root page");
+})
 
 app.post('/getData', async (req, res) => {
 
