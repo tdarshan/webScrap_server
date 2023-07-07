@@ -6,7 +6,7 @@ const express = require('express');
 const { getAllData, getMediaLinks, getWebLinks } = require('./getData');
 const WebData = require('./models/webData.model');
 const app = express()
-const port = 8000;
+const port = process.env.PORT || 8000;
 const cors = require('cors');
 const bodyParser = require('body-parser');
 
