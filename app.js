@@ -19,7 +19,7 @@ app.use(cors({
 }));
 
 app.get("/", (req, res) => {
-    res.send("Root page");
+    res.send("Root page!");
 })
 
 app.post('/getData', async (req, res) => {
