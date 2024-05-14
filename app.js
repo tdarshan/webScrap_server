@@ -20,7 +20,11 @@ app.use(cors({
 
 app.get("/", (req, res) => {
     res.send("Root page!");
-})
+});
+
+app.get("/test-api", (req, res) => {
+    res.status(200).json({Msg: "API Working well"});
+});
 
 app.post('/getData', async (req, res) => {
 
