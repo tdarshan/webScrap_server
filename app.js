@@ -23,6 +23,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/test-api", (req, res) => {
+    console.log({msg: "API Working well!"});
     res.status(200).json({Msg: "API Working well"});
 });
 
